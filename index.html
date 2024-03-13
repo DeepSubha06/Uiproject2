@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="icon" href="./logo-color.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Nav with Banner -->
+
+    <section class="banner">
+        <div class="wrapper">
+            <div class="container">
+                <i class="fa-solid fa-bars tog-icon"></i>
+                <nav class="main-nav">
+                    <div class="nav-image">
+                        <a href=""><img title="UI" src="./logo.png" alt=""></a>
+                    </div>
+                    <ul class="main-ul">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a class="last-anch" href="">SIGN IN</a></li>
+                    </ul>
+                </nav>
+                <div class="text-ban">
+                    <h1>UI <span
+                            class="text-span-1 animate__animated animate__bounce animate__infinite	infinite">.</span>
+                    </h1>
+                    <h2>BEGINNER<span class="text-span-2">'s</span></h2>
+                </div>
+                <div class="banner-box">
+                    <div class="text-1">
+                        <h4>BECOME A <br> PRO-DESIGNER</h4>
+                    </div>
+                    <div class="owl-one owl-carousel owl-theme">
+                        <div class="banner-image">
+                            <img src="./banner-image.png" alt="">
+                        </div>
+                        <div class="banner-image">
+                            <img src="./banner-image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-2">
+                        <h3>START GUIDE FOR BEGINNER <br>DESIGNERS</h3>
+                        <p>Lorem ipsum dolor sit amet, consecte- <br>tur adipiscing elit, sed do eiusmod <br> tempor
+                            incididunt ut labore .</p>
+                        <div class="button-group">
+                            <a href=""><button>LET'S START</button></a>
+                            <a href=""><button>READ MORE</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="edi-box">
+                    <h3>EDITION <br> <span class="edi-date">2024</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="count-part">
+            <div class="sec-1-box">
+                <div class="sec-1-box-1">
+                    <h2><span class="sec-1-plus">+</span><span class="counter">150</span></h2>
+                    <h3>HAPPY <br> <span class="sec-1-activity">STUDENTS</span></h3>
+                </div>
+                <div class="sec-1-box-1">
+                    <h2><span class="sec-1-plus">+</span><span class="counter">50</span></h2>
+                    <h3>CERTIFIED <br> COURSES</h3>
+                </div>
+                <div class="sec-1-box-1">
+                    <h2><span class="sec-1-plus">+</span><span class="counter">1000</span></h2>
+                    <h3>AWARDS <br>RECEIVED</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-2-text">
+                    <h2>ACCEPT <br> <span class="sec-2-span">NEW</span> <br>CHALLENGES</h2>
+                </div>
+                <div class="sec-2-textbox">
+                    <div class="textbox-1">
+                        <h3><a href="">EXPLORE</a></h3>
+                    </div>
+                    <div class="textbox-1">
+                        <a href="#sec-3"><i class="fa-solid fa-arrow-down-long arr"></i></a>
+                    </div>
+                    <div class="textbox-1">
+                        <h3><a href="">ABOUT</a></h3>
+                    </div>
+                </div>
+                <div class="side-text">
+                    <h4>DISCOVER YOUR SKILLS</h4>
+                </div>
+                <div class="side-text-2">
+                    <h4>DISCOVER YOUR SKILLS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-3">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-3-text">
+                    <div class="sec-3-text1">
+                        <h2>FIND <span class="sec-3-span">YOUR COURSE.</span></h2>
+                    </div>
+                    <div class="sec-3-text1">
+                        <h3>EDITION <br> <span class="edi-date">2024</span></h3>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card-boxmodel" data-aos="fade-right">
+                        <h2>COURSE <span class="card-span">01</span></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor
+                            inci-<br>didunt ut labore et.</p>
+                        <div class="card-butt">
+                            <a href=""><button>READ MORE</button></a>
+                        </div>
+                        <div class="box-number">
+                            <h4>.01</h4>
+                        </div>
+                    </div>
+                    <div class="card-boxmodel" data-aos="fade-right">
+                        <h2>COURSE <span class="card-span">02</span></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor
+                            inci-<br>didunt ut labore et.</p>
+                        <div class="card-butt">
+                            <a href=""><button>READ MORE</button></a>
+                        </div>
+                        <div class="box-number">
+                            <h4>.02</h4>
+                        </div>
+                    </div>
+                    <div class="card-boxmodel" data-aos="fade-left">
+                        <h2>COURSE <span class="card-span">03</span></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor
+                            inci-<br>didunt ut labore et.</p>
+                        <div class="card-butt">
+                            <a href=""><button>READ MORE</button></a>
+                        </div>
+                        <div class="box-number">
+                            <h4>.03</h4>
+                        </div>
+                    </div>
+                    <div class="card-boxmodel" data-aos="fade-left">
+                        <h2>COURSE <span class="card-span">04</span></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor
+                            inci-<br>didunt ut labore et.</p>
+                        <div class="card-butt">
+                            <a href=""><button>READ MORE</button></a>
+                        </div>
+                        <div class="box-number">
+                            <h4>.04</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-box">
+                    <h3><a href="">MORE COURSES</a></h3>
+                    <a href=""><i class="fa-solid fa-arrow-right arr-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-4">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-4-box">
+                    <div class="sec-4-box-1">
+                        <div class="sec-4-texting">
+                            <h2>About <span class="sec-4-span">us.</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor
+                                incididunt ut labore et <br> dolore magna aliqua Quis ipsum suspendisse.</p>
+                            <div class="text-box">
+                                <div class="text-box-1">
+                                    <h4>Lorem ipsum dolor.</h4>
+                                </div>
+                                <div class="text-box-1">
+                                    <h4>Lorem ipsum dolor.</h4>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <div class="text-box-1 last-box">
+                                    <h4>Lorem ipsum dolor.</h4>
+                                </div>
+                                <div class="text-box-1 last-box">
+                                    <h4>Lorem ipsum dolor.</h4>
+                                </div>
+                            </div>
+                            <div class="text-butt">
+                                <a href=""><button>READ MORE</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-4-box-1">
+                        <div class="sec-4-image" data-aos="fade-up-left">
+                            <img src="./sec-4-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-5">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-5-box">
+                    <div class="sec-5-box-1">
+                        <div class="sec-5-image">
+                            <img src="./sec-5-image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-5-box-2">
+                        <div class="sec-5-text">
+                            <h2>Why <span class="sec-5-span">us.</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor
+                                incididunt ut labore et <br> dolore magna aliqua Quis ipsum suspendisse consec-
+                                <br>tetur
+                                adipiscing elit, sed do eiusmod tempor inci- <br>didunt ut labore et dolore magna aliqua
+                                Quis <br> ipsum suspendisse.</p>
+                            <div class="sec-5-butt">
+                                <a href=""><button>READ MORE</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-text-sec-5">
+            <h3><a href="">EXPLORE</a></h3>
+        </div>
+    </section>
+
+    <section class="sec-6">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-6-image">
+                    <div class="sec-6-boximage">
+                        <img src="./box-image-man.png" alt="">
+                        <div class="play-image">
+                            <a href=""><i class="fa-solid fa-play play-icon"></i></a>
+                        </div>
+                        <div class="sec-6-text">
+                            <h3><a href="">START</a></h3>
+                        </div>
+                        <div class="sec-6-text-2">
+                            <h3><a href="">NOW</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-6-sidetext">
+                    <h4>READY TO <br>GET STARTED</h4>
+                </div>
+                <div class="sec-6-sidetext-2">
+                    <h4>READY TO <br>GET STARTED</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-7">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-7-title">
+                    <h2>WHAT</h2>
+                    <h3>users think.</h3>
+                </div>
+                <div class="sliding">
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-1.png" alt="">
+                        </div>
+                        <h4>Laura smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-2.png" alt="">
+                        </div>
+                        <h4>Jhon smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-3.png" alt="">
+                        </div>
+                        <h4>Sara smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-1.png" alt="">
+                        </div>
+                        <h4>Laura smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-2.png" alt="">
+                        </div>
+                        <h4>Jhon smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-3.png" alt="">
+                        </div>
+                        <h4>Sara smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-1.png" alt="">
+                        </div>
+                        <h4>Laura smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-2.png" alt="">
+                        </div>
+                        <h4>Jhon smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                    <div class="sec-7-box-1">
+                        <div class="sec-7-image">
+                            <img src="./cus-3.png" alt="">
+                        </div>
+                        <h4>Sara smith</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>Lorem ipsum dolor sit amet, con- <br> sectetur adipiscing elit, sed do <br> eiusmod tempor
+                            incididunt ut <br> labore et dolore magna aliqua .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-8">
+        <div class="wrapper">
+            <div class="container">
+                <div class="sec-8-box">
+                    <div class="sec-8-text">
+                        <h2>SUBSCRIBE</h2>
+                        <h3>to our newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor
+                            incididunt .
+                        </p>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <form>
+                        <input placeholder="NAME" class="in-1" type="text">
+                        <input placeholder="MAIL" class="in-2" type="email">
+                        <textarea placeholder="MESSAGE"></textarea>
+                        <div class="sub-in">
+                            <input class="in-3" type="submit" value="SEND MESSAGE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-foot">
+        <div class="wrapper">
+            <div class="container">
+                <div class="foot-box">
+                    <div class="foot-box-1">
+                        <div class="foot-heading">
+                            <h3 class="sign-foot-3">About</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Mission Statement</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-box-1">
+                        <div class="foot-heading">
+                            <h3 class="sign-foot-2">What we do</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">News and stories</a></li>
+                            <li><a href="">Publications</a></li>
+                            <li><a href="">Take action</a></li>
+                            <li><a href="">Recomendations</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-box-1">
+                        <div class="foot-heading">
+                            <h3 class="sign-foot">Sign Up To Receive <br>Our Newsletter</h3>
+                        </div>
+                        <input class="em-1" type="email">
+                        <div class="social-box">
+                            <div class="soc-icon">
+                                <h4>Follow us!</h4>
+                            </div>
+                            <div class="soc-icon">
+                                <a href=""><i class="fa-brands fa-facebook-f face-icon"></i></a>
+                            </div>
+                            <div class="soc-icon">
+                                <a href=""><i class="fa-brands fa-instagram face-icon"></i></a>
+                            </div>
+                            <div class="soc-icon">
+                                <a href=""><i class="fa-brands fa-youtube face-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            var counters = $(".counter");
+            var countersQuantity = counters.length;
+            var counter = [];
+
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
+
+            var count = function (start, value, id) {
+                var localStart = start;
+                setInterval(function () {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 50);
+            }
+
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                autoplaySpeed: 2000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    575.98: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+
+            $('.sliding').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                pauseOnHover: true,
+                speed: 5000,
+                responsive: [
+                    {
+                        breakpoint: 1499.98,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 1199.98,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 991.98,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767.98,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.tog-icon').click(function () {
+                $('.main-ul').slideToggle(300);
+            });
+        });
+
+        AOS.init();
+
+    </script>
+
+</body>
+
+</html>
